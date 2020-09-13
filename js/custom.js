@@ -558,9 +558,9 @@ $(document).ready(function () {
 
   if (starfield.length) {
     starfield.starfield({
-      speed: 0,
-      quantity: 500,
-      ratio: 200
+      starDensity: 1.0,
+      mouseScale: 1,
+      // seedMovement: true
     });
   }
 

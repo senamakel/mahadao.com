@@ -1,6 +1,33 @@
-$body-color: slateblue;
+* {
+  margin: 0%;
+  padding: 0%;
+}
 
 body {
-  color: $body-color;
-  font-family: sans-serif;
+  background-color: #161616;
+  width: 1000px;
+  height: 2000px;
+}
+
+.chakra {
+  width: 900px;
+  height: 1220px;
+  margin-left: 620px;
+  background: url("../images/mandal.png");
+  animation: animate 1s steps(5) infinite;
+}
+
+@keyframes animate {
+  from {
+    background-position: 0;
+  }
+}
+
+.chakra2 {
+  width: 1229px;
+  height: 1229px;
+  margin-left: -420px;
+  border-radius: 360px;
+  background: url("../images/gradient-circle.png");
+  animation: animate 4s steps(5) infinite;
 }

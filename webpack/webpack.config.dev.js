@@ -13,11 +13,11 @@ module.exports = merge(common, {
     chunkFilename: 'js/[name].chunk.js'
   },
   devServer: {
-    contentBase: Path.join(__dirname, '../src'),
-    watchContentBase: true,
+    // contentBase: Path.join(__dirname, '../src'),
+    // watchContentBase: true,
 
     inline: true,
-    hot: true
+    // hot: true
   },
   plugins: [
     new LiveReloadPlugin({}),

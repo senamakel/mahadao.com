@@ -20,8 +20,11 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({ patterns: [{ from: Path.resolve(__dirname, '../public'), to: 'public' }] }),
+    new CopyWebpackPlugin({ patterns: [{ from: Path.resolve(__dirname, '../src/img'), to: 'img' }] }),
     new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/index.html'),
+      // filename: "about.html",
+      // template: "!!ejs-compiled-loader!./src/index.ejs"
     }),
   ],
   resolve: {
@@ -45,6 +48,10 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.(ejs)$/,
+        loader: "ejs-compiled-loader"
+      }
     ],
   },
 };

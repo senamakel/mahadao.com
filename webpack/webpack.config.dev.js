@@ -40,8 +40,9 @@ module.exports = merge(common, {
         }
       },
       {
-        test: /\.html$/i,
-        loader: 'html-loader',
+        test: /\.(html)$/,
+        include: Path.join(__dirname, '../src/html'),
+        use: { loader: 'html-loader' }
       },
       {
         test: /\.js$/,

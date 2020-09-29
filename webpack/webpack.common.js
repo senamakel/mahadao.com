@@ -23,7 +23,7 @@ module.exports = {
     new CopyWebpackPlugin({ patterns: [{ from: Path.resolve(__dirname, '../src/img'), to: 'img' }] }),
     new CopyWebpackPlugin({ patterns: [{ from: Path.resolve(__dirname, '../src/images'), to: 'images' }] }),
     new HtmlWebpackPlugin({
-      template: Path.resolve(__dirname, '../src/index.html'),
+      template: Path.resolve(__dirname, '../src/html/index.hbs'),
       // filename: "about.html",
       // template: "!!ejs-compiled-loader!./src/index.ejs"
     }),
@@ -39,6 +39,12 @@ module.exports = {
         test: /\.mjs$/,
         include: /node_modules/,
         type: 'javascript/auto',
+      },
+      {
+        test: /\.(hbs|handlebars)$/,
+        use: {
+          loader: "handlebars-loader",
+        }
       },
       {
         test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,

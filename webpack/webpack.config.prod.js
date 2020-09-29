@@ -28,7 +28,7 @@ module.exports = merge(common, {
         use: 'babel-loader',
       },
       {
-        test: /\.s?css/i,
+        test: /\.sass/i,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
       },
     ],

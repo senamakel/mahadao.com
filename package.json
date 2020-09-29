@@ -8,7 +8,7 @@
     "lint:scripts": "eslint src",
     "push": "yarn build && echo 'test-55035.mahadao.com' > build/CNAME && gh-pages --dist build",
     "push-dev": "yarn build && gh-pages --dist build",
-    "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js --colors",
+    "build": "rimraf build; cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js --colors",
     "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
   },
   "repository": {
@@ -47,6 +47,7 @@
     "mini-css-extract-plugin": "^0.11.2",
     "node-sass": "^4.14.1",
     "postcss-loader": "^4.0.2",
+    "rimraf": "^3.0.2",
     "sass-loader": "^10.0.2",
     "style-loader": "^1.2.1",
     "stylelint": "^13.7.2",

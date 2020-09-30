@@ -3,6 +3,9 @@ footer
   max-width: $max-width
   margin: 0 auto
   padding: 30px 90px
+  position: relative
+  z-index: 0
+  overflow: hidden
 
   .footer-title
     // width: 580px
@@ -67,3 +70,14 @@ footer
     color: #ffffff
     font-size: 30px
     margin: 63.04px 24.5px 10px 24.5px
+
+  #footer-gradient
+    background: #212121
+    background: radial-gradient(circle, rgba(84,41,41,1) 0%, #212121 75%)
+    position: absolute
+    top: 0
+    left: calc(50% - 450px)
+    right: 0
+    height: 900px
+    width: 900px
+    z-index: -1

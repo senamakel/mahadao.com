@@ -1,5 +1,5 @@
 footer
-  background: rgba(33, 33, 33, 1)
+  background: #212121
   max-width: $max-width
   margin: 0 auto
   padding: 30px 90px
@@ -17,9 +17,13 @@ footer
     letter-spacing: 0px
     text-align: left
     color: #ffffff
-    margin-bottom: 30px
     // margin: 60px 10px 0px 130px
     float: left
+
+  .footer-side
+    margin-bottom: 30px
+    display: flex
+    align-items: center
 
   .footer-flex
     // width: 1300px
@@ -40,8 +44,16 @@ footer
     margin-left: 500px
     margin-top: 40px
 
+  .powered-by
+    color: #fff
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    flex-direction: row
+
   .footer-text3
     margin-top: 0px
+    padding: 10px
     font-size: 18px
     line-height: 21px
     letter-spacing: 0px
@@ -51,13 +63,12 @@ footer
     width: 140px
     height: 50px
     border-radius: 10px
-    margin-top: 25px
 
   .footer-end
     float: right
     color: #ffffff
-    margin-right: 80px
-    margin-top: 40px
+    // margin-right: 80px
+    // margin-top: 40px
 
   .social-items
     // display: inline
@@ -69,13 +80,50 @@ footer
   .fab
     color: #ffffff
     font-size: 30px
-    margin: 63.04px 24.5px 10px 24.5px
+    margin: 0 24.5px
+
+  .middle-post
+    margin: 30px 0
+
+  .button1
+    width: 200px
+    height: 56px
+    font-size: 18px
+    border-radius: 45px
+    background-color: #333333
+    color: #ffffff
+    border: 0
+
+    &:hover
+      background-color: #f43b4e
+
+  .twobuttons
+    float: right
+    display: flex
+
+    li
+      // display: inline-block
+      list-style: none
+
+  .button2
+    width: 200px
+    height: 56px
+    font-family: $font-family-heading
+    border: 0
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    margin-left: 20px
+    border-radius: 45px
+    color: #ffffff
+    background: linear-gradient(#f47f57, #fd5656)
 
   #footer-gradient
     background: #212121
-    background: radial-gradient(circle, rgba(84,41,41,1) 0%, #212121 75%)
+    background: radial-gradient(circle, rgba(84,41,41,1) 0%, #212121 50%)
     position: absolute
     top: 0
+    opacity: 0.6
     left: calc(50% - 450px)
     right: 0
     height: 900px

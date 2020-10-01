@@ -5,6 +5,9 @@
   margin: 100px auto
   padding: 0 60px
 
+  .row
+    margin-bottom: 50px
+
   .pitch
     // margin-left: 124px
     // margin-top: 238px
@@ -25,6 +28,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 50px 0
 
     .para-text
       max-width: 600px
@@ -57,10 +61,11 @@
   .token
     text-align: center
 
-
   .icon-section
     position: relative
     display: inline-block
+    width: $token-width
+    height: $token-width
 
     .rightpara-leftfig-img
       width: $token-width
@@ -77,6 +82,13 @@
       &.maha
         right: ($token-width  - 196px) / 2
 
+    .token-title
+      font-family: $font-family-heading
+      color: #ffffff
+      font-size: 30px
+      font-weight: bold
+      text-align: center
+      margin-top: -100px
 
   .right-side-title
     color: #ffffff
@@ -87,8 +99,3 @@
   .leftpara-rightfig
     display: flex
     justify-content: center
-
-  .left-side-para
-    // margin-left: 303px
-    margin-top: 155px
-    // width: 493px

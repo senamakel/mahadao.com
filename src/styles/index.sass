@@ -23,11 +23,22 @@ html
 
 body
   display: block
-  height: 100%
+  min-height: 100%
   width: 100%
   overflow-x: hidden
   background-color: #161616
   position: relative
+
+/* scrollbar */
+::-webkit-scrollbar
+  width: 5px;
+::-webkit-scrollbar-track
+  background: rgba(#000, 0.1);
+::-webkit-scrollbar-thumb
+  background: #FF8B71;
+::-webkit-scrollbar-thumb:hover
+  background: #A81E41;
+
 
 @import './_background'
 @import './_header'

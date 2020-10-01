@@ -1,16 +1,42 @@
 #section-token-logos
-  max-width: $max-width
-  margin: 0 auto
+  $token-width: 450px
 
-  .right-side-para
+  max-width: $max-width
+  margin: 100px auto
+  padding: 0 60px
+
+  .pitch
     // margin-left: 124px
-    margin-top: 238px
+    // margin-top: 238px
     // width: 493px
     font-family: $font-family-heading
+    color: #ffffff
+    font-size: 30px
+    font-weight: 800
+    line-height: 1.2
 
-  .fig-rightpara
+  .side-text
+    color: #ababab
+    font-size: 16px
+    font-weight: 400
+    margin-top: 30px
+
+  .side-para
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .para-text
+      max-width: 600px
+
+  // .fig-rightpara
     // display: flex
     // justify-content: center
+
+  // .coin-arth
+  .coin-maha
+    .icon-section
+      text-align: right
 
   .toppara-leftfig
     position: relative
@@ -28,23 +54,35 @@
   //   width: 539px
   //   height: 512px
 
-  .rightpara-leftfig-img-inner
-    position: absolute
-    margin: -385px 10px 20px 184px
-    width: 196px
-    height: 196px
+  .token
+    text-align: center
+
+
+  .icon-section
+    position: relative
+    display: inline-block
+
+    .rightpara-leftfig-img
+      width: $token-width
+      height: $token-width
+
+    .rightpara-leftfig-img-inner
+      position: absolute
+      width: 196px
+      height: 196px
+      top: ($token-width  - 196px) / 2
+      &.arth
+        left: ($token-width  - 196px) / 2
+
+      &.maha
+        right: ($token-width  - 196px) / 2
+
 
   .right-side-title
     color: #ffffff
     font-size: 36px
     font-weight: 800
     line-height: 1.2
-
-  .right-side-text
-    color: #ababab
-    font-size: 18px
-    font-weight: 400px
-    margin-top: 40px
 
   .leftpara-rightfig
     display: flex

@@ -6,7 +6,7 @@
     "lint": "npm run lint:styles; npm run lint:scripts",
     "lint:styles": "stylelint src",
     "lint:scripts": "eslint src",
-    "push": "yarn build && echo 'test-55035.mahadao.com' > build/CNAME && gh-pages --dist build",
+    "push": "yarn build && echo 'mahadao.com' > build/CNAME && gh-pages --dist build",
     "push-dev": "yarn build && gh-pages --dist build",
     "build": "rimraf build; cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js --colors",
     "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js"

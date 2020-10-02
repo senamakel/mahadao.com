@@ -7,8 +7,17 @@
   // max-width: 1180
 
   .mahadao-logo
-    flex: 1
-    height: 54.4px
+
+    @media (min-width: 400px)
+      flex: 1
+      height: 54.4px
+
+    @media (max-width: 400px)
+      text-align: center
+
+      img
+        margin-top: 10px
+        max-width: 100%
 
   .two_buttons
     float: right

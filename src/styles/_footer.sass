@@ -7,23 +7,34 @@ footer
   z-index: 0
   overflow: hidden
 
+  @media (max-width: 400px)
+    padding: 30px
+
   .footer-title
     // width: 580px
     font-family: $font-family-heading
     font-size: 36px
     font-style: normal
     font-weight: 700
-    line-height: 47px
+    line-height: 1.2
     letter-spacing: 0px
     text-align: left
     color: #ffffff
     // margin: 60px 10px 0px 130px
-    float: left
+    // float: left
+
+    @media (max-width: 400px)
+      margin-bottom: 30px
 
   .footer-side
     margin-bottom: 30px
-    display: flex
-    align-items: center
+    // display: flex
+    // align-items: center
+
+    @media (min-width: 400px)
+      display: flex
+      align-items: center
+      margin-bottom: 0
 
   .footer-flex
     // width: 1300px
@@ -33,7 +44,7 @@ footer
   .footer-text
     color: rgba(150, 150, 150, 1)
     font-family: $font-family-body
-    font-size: 18px
+    font-size: 16px
     font-style: normal
     font-weight: 400
     line-height: 25px
@@ -50,11 +61,14 @@ footer
     justify-content: flex-end
     align-items: center
     flex-direction: row
+    @media (max-width: 400px)
+      margin-top: 30px
+      justify-content: center
 
   .footer-text3
     margin-top: 0px
     padding: 10px
-    font-size: 18px
+    font-size: 16px
     line-height: 21px
     letter-spacing: 0px
     text-align: left
@@ -77,10 +91,13 @@ footer
     // height: 27.27px
     // margin-left: 100px
 
+    @media (max-width: 400px)
+      text-align: center
+
   .fab
     color: #ffffff
     font-size: 30px
-    margin: 0 24.5px
+    margin: 0 24.5px 25px
 
   .middle-post
     margin: 30px 0
@@ -98,12 +115,20 @@ footer
       background-color: #f43b4e
 
   .twobuttons
-    float: right
+    // float: right
     display: flex
+    flex-wrap: wrap
+    justify-content: flex-end
+
+    @media (max-width: 400px)
+      justify-content: flex-start
 
     li
       // display: inline-block
       list-style: none
+
+      @media (max-width: 400px)
+        margin-bottom: 15px
 
   .button2
     width: 200px
@@ -117,6 +142,9 @@ footer
     border-radius: 45px
     color: #ffffff
     background: linear-gradient(#f47f57, #fd5656)
+
+    @media (max-width: 400px)
+      margin-left: 0
 
   #footer-gradient
     background: #212121

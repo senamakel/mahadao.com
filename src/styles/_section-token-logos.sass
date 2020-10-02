@@ -1,9 +1,13 @@
 #section-token-logos
   $token-width: 450px
+  $token-inner-width: 196px
 
   max-width: $max-width
   margin: 100px auto
   padding: 0 60px
+
+  @media screen and (max-width: 500px)
+    padding: 0 30px
 
   .row
     margin-bottom: 50px
@@ -25,9 +29,9 @@
     margin-top: 30px
 
   .side-para
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: flex
+    flex-direction: column
+    justify-content: center
     margin: 50px 0
 
     .para-text
@@ -73,14 +77,37 @@
 
     .rightpara-leftfig-img-inner
       position: absolute
-      width: 196px
-      height: 196px
-      top: ($token-width  - 196px) / 2
+      width: $token-inner-width
+      height: $token-inner-width
+      top: ($token-width  - $token-inner-width) / 2
+
       &.arth
-        left: ($token-width  - 196px) / 2
+        left: ($token-width  - $token-inner-width) / 2
 
       &.maha
-        right: ($token-width  - 196px) / 2
+        right: ($token-width  - $token-inner-width) / 2
+
+    @media screen and (max-width: 500px)
+      $token-width: 300px
+      $token-inner-width: 100px
+
+      width: $token-width
+      height: $token-width
+
+      .rightpara-leftfig-img
+        width: $token-width
+        height: $token-width
+
+      .rightpara-leftfig-img-inner
+        width: $token-inner-width
+        height: $token-inner-width
+        top: ($token-width  - $token-inner-width) / 2
+
+        &.arth
+          left: ($token-width  - $token-inner-width) / 2
+
+        &.maha
+          right: ($token-width  - $token-inner-width) / 2
 
     .token-title
       font-family: $font-family-heading
